@@ -1,0 +1,19 @@
+CREATE TABLE inventory (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, color INTEGER);
+
+INSERT INTO inventory VALUES (1, "mugs", 10, 15, 10);
+INSERT INTO inventory VALUES (2, "shirts", 100, 20, 10);
+INSERT INTO inventory VALUES (3, "bookmarks", 20, 5, 3);
+INSERT INTO inventory VALUES (4, "hats", 10, 10, 5);
+INSERT INTO inventory VALUES (5, "coasters", 20, 5, 5);
+INSERT INTO inventory VALUES (6, "mousepads", 15, 10, 5);
+INSERT INTO inventory VALUES (7, "glasses", 20, 5, 5);
+INSERT INTO inventory VALUES (8, "headbands", 20, 3, 4);
+INSERT INTO inventory VALUES (9, "keychains", 15, 3, 3);
+INSERT INTO inventory VALUES (10, "plates", 20, 10, 5);
+INSERT INTO inventory VALUES (11, "phone cases", 50, 15, 10);
+INSERT INTO inventory VALUES (12, "pock sockets", 20, 15, 10);
+INSERT INTO inventory VALUES (13, "tumblers", 20, 15, 10);
+INSERT INTO inventory VALUES (14, "cups", 25, 15, 10);
+INSERT INTO inventory VALUES (15, "glass mugs", 30, 5, 3);
+
+SELECT * FROM inventory ORDER BY price > color;
